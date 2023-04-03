@@ -27,7 +27,7 @@ form {
 }
 
 .mainCard {
-  width: 40vw;
+  width: 530px;
   border-radius: 25px;
   background-color: #fff;
   padding: 25px;
@@ -45,7 +45,7 @@ form {
 .inputForm {
   border: none;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #d6d6d6;
   outline: none;
   width: 65%;
   border-radius: 8px;
@@ -74,6 +74,7 @@ form {
   cursor: pointer;
   font-weight: 500;
   transition: 0.5s;
+  width: 100px;
 }
 
 .btnCreate:hover {
@@ -95,14 +96,20 @@ form {
 
 .card {
   width: 90%;
-  padding: 15px;
-  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  padding: 5px 15px;
+  box-shadow: 0px 4px 6px 1px rgba(71, 71, 71, 0.16);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   margin: 5px 0px;
   position: relative;
+  align-items: center;
+}
+
+.card div {
+  display: flex;
+  align-items: center;
 }
 
 .task {
@@ -140,4 +147,13 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+@media (max-width: 760px) {
+  .mainCard {
+    width: 70vW;
+  }
+  .btnCreate {
+    padding: 10px 10px;
+  }
 }
